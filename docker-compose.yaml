@@ -1,0 +1,38 @@
+services:
+  database:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: mydb
+    volumes:
+      - ./data/db_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  nats:
+    image: nats:latest
+    volumes:
+      - ./data/nats_data:/data
+    ports:
+      - "4222:4222"
+      - "8222:8222"
+    command: 
+      - "--js"
+
+  minio:
+    image: minio/minio:latest
+    environment:
+      MINIO_ROOT_USER: minioadmin
+      MINIO_ROOT_PASSWORD: minioadmin
+    volumes:
+      - ./data/minio_data:/data
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+
+  mailpit:
+    image: mailpit/mailpit:latest
+    ports:
+      - "8025:8025"
+      - "1025:1025"

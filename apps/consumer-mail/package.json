@@ -1,0 +1,17 @@
+{
+  "name": "mail-consumer",
+  "type": "module",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint . --max-warnings 0"
+  },
+  "devDependencies": {
+    "@trovee/eslint-config": "workspace:*",
+    "@trovee/typescript-config": "workspace:*",
+    "@types/node": "^24.6.2",
+    "eslint": "^9.34.0",
+    "typescript": "^5.9.3"
+  }
+}
