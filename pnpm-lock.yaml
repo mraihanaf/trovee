@@ -23,6 +23,9 @@ importers:
 
   apps/aggregator-events:
     devDependencies:
+      '@trovee/esbuild-config':
+        specifier: workspace:*
+        version: link:../../packages/esbuild-config
       '@trovee/eslint-config':
         specifier: workspace:*
         version: link:../../packages/eslint-config
@@ -32,9 +35,15 @@ importers:
       '@types/node':
         specifier: ^24.6.2
         version: 24.6.2
+      esbuild:
+        specifier: ^0.25.10
+        version: 0.25.10
       eslint:
         specifier: ^9.34.0
         version: 9.34.0
+      tsx:
+        specifier: ^4.7.1
+        version: 4.20.6
       typescript:
         specifier: ^5.9.3
         version: 5.9.3
@@ -48,6 +57,9 @@ importers:
         specifier: ^4.9.9
         version: 4.9.9
     devDependencies:
+      '@trovee/esbuild-config':
+        specifier: workspace:*
+        version: link:../../packages/esbuild-config
       '@trovee/eslint-config':
         specifier: workspace:*
         version: link:../../packages/eslint-config
@@ -57,6 +69,9 @@ importers:
       '@types/node':
         specifier: ^20.19.19
         version: 20.19.19
+      esbuild:
+        specifier: ^0.25.10
+        version: 0.25.10
       eslint:
         specifier: ^9.34.0
         version: 9.34.0
@@ -69,6 +84,9 @@ importers:
 
   apps/consumer-events:
     devDependencies:
+      '@trovee/esbuild-config':
+        specifier: workspace:*
+        version: link:../../packages/esbuild-config
       '@trovee/eslint-config':
         specifier: workspace:*
         version: link:../../packages/eslint-config
@@ -78,15 +96,24 @@ importers:
       '@types/node':
         specifier: ^24.6.2
         version: 24.6.2
+      esbuild:
+        specifier: ^0.25.10
+        version: 0.25.10
       eslint:
         specifier: ^9.34.0
         version: 9.34.0
+      tsx:
+        specifier: ^4.7.1
+        version: 4.20.6
       typescript:
         specifier: ^5.9.3
         version: 5.9.3
 
   apps/consumer-mail:
     devDependencies:
+      '@trovee/esbuild-config':
+        specifier: workspace:*
+        version: link:../../packages/esbuild-config
       '@trovee/eslint-config':
         specifier: workspace:*
         version: link:../../packages/eslint-config
@@ -96,9 +123,15 @@ importers:
       '@types/node':
         specifier: ^24.6.2
         version: 24.6.2
+      esbuild:
+        specifier: ^0.25.10
+        version: 0.25.10
       eslint:
         specifier: ^9.34.0
         version: 9.34.0
+      tsx:
+        specifier: ^4.7.1
+        version: 4.20.6
       typescript:
         specifier: ^5.9.3
         version: 5.9.3
@@ -145,6 +178,8 @@ importers:
       typescript:
         specifier: 5.9.2
         version: 5.9.2
+
+  packages/esbuild-config: {}
 
   packages/eslint-config:
     devDependencies:
