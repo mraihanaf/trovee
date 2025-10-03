@@ -13,10 +13,6 @@
     "@trovee/esbuild-config": "workspace:*",
     "@trovee/eslint-config": "workspace:*",
     "@trovee/typescript-config": "workspace:*",
-    "@types/node": "^24.6.2",
-    "eslint": "^9.34.0",
-    "tsx": "^4.7.1",
-    "esbuild": "^0.25.10",
-    "typescript": "^5.9.3"
+    "@types/node": "^24.6.2"
   }
 }

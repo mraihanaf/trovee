@@ -6,15 +6,18 @@
     "dev": "turbo run dev",
     "lint": "turbo run lint",
     "start": "turbo run start",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\" '!data/**'",
     "check-types": "turbo run check-types",
     "prepare": "husky"
   },
   "devDependencies": {
+    "esbuild": "^0.25.10",
+    "eslint": "^9.36.0",
     "husky": "^9.1.7",
     "prettier": "^3.6.2",
+    "tsx": "^4.20.6",
     "turbo": "^2.5.8",
-    "typescript": "5.9.2"
+    "typescript": "^5.9.3"
   },
   "packageManager": "pnpm@9.0.0",
   "engines": {

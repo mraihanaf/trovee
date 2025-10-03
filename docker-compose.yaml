@@ -30,9 +30,10 @@ services:
     ports:
       - "9000:9000"
       - "9001:9001"
+    command: server /data --console-address ":9001"
 
   mailpit:
-    image: mailpit/mailpit:latest
+    image: axllent/mailpit:latest
     ports:
       - "8025:8025"
       - "1025:1025"

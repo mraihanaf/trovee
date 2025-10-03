@@ -11,17 +11,14 @@
   },
   "dependencies": {
     "@hono/node-server": "^1.19.5",
-    "hono": "^4.9.9"
+    "hono": "^4.9.9",
+    "minio": "^8.0.6"
   },
   "devDependencies": {
     "@trovee/esbuild-config": "workspace:*",
     "@trovee/eslint-config": "workspace:*",
     "@trovee/typescript-config": "workspace:*",
-    "@types/node": "^20.19.19",
-    "esbuild": "^0.25.10",
-    "eslint": "^9.34.0",
-    "tsx": "^4.7.1",
-    "typescript": "^5.8.3"
+    "@types/node": "^20.19.19"
   },
   "_moduleAliases": {
     "@": "dist"
