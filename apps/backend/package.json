@@ -12,7 +12,8 @@
   "dependencies": {
     "@hono/node-server": "^1.19.5",
     "hono": "^4.9.9",
-    "minio": "^8.0.6"
+    "minio": "^8.0.6",
+    "pino": "^10.0.0"
   },
   "devDependencies": {
     "@trovee/esbuild-config": "workspace:*",

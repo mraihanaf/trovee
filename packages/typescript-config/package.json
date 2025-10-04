@@ -3,5 +3,8 @@
   "private": true,
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "pino": "^10.0.0"
   }
 }

@@ -9,4 +9,5 @@ export const esbuildConfig = {
     alias: {
       "@": "./src",
     },
+    packages: "external"
   }

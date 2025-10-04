@@ -15,5 +15,8 @@
     "@trovee/eslint-config": "workspace:*",
     "@trovee/typescript-config": "workspace:*",
     "@types/node": "^24.6.2"
+  },
+  "dependencies": {
+    "pino": "^10.0.0"
   }
 }

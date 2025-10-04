@@ -1,1 +1,3 @@
-console.log("Hello Consumer!");
+import logger from "@/utils/logger";
+
+logger.info("Starting mail consumer service...");

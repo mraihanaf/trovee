@@ -1,6 +1,9 @@
 import { serve } from "@hono/node-server";
 import { Hono } from "hono";
+import logger from "@/utils/logger";
 import routes from "@/routes/index";
+
+await import("@/utils/load-env");
 
 const app = new Hono();
 
@@ -9,9 +12,9 @@ app.route("/v1", routes);
 serve(
     {
         fetch: app.fetch,
-        port: 3001,
+        port: parseInt(process.env.PORT!) || 3001,
     },
     (info) => {
-        console.log(`Server is running on http://localhost:${info.port}`);
+        logger.info(`Server is running on http://localhost:${info.port}`);
     },
 );

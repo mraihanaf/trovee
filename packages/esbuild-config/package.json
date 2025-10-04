@@ -5,5 +5,8 @@
   "private": true,
   "exports": {
     "./backend": "./backend.js"
+  },
+  "dependencies": {
+    "pino": "^10.0.0"
   }
 }

@@ -22,5 +22,6 @@
       "persistent": true,
       "cache": false
     }
-  }
+  },
+  "globalEnv": ["NODE_ENV", "LOG_LEVEL", "PORT"]
 }
