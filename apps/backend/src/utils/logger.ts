@@ -2,7 +2,7 @@ import { pino } from "pino";
 await import("@/utils/load-env");
 
 const logger = pino({
-    name: "aggregator-events",
+    name: "backend",
     level: process.env.LOG_LEVEL || "info",
     transport:
         process.env.NODE_ENV !== "production"
