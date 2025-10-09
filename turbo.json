@@ -23,5 +23,5 @@
       "cache": false
     }
   },
-  "globalEnv": ["NODE_ENV", "LOG_LEVEL", "PORT"]
+  "globalEnv": ["NODE_ENV", "LOG_LEVEL", "PORT", "NATS_URL", "BETTER_AUTH_SECRET", "BETTER_AUTH_URL", "GOOGLE_CLIENT_ID", "DATABASE_URL"]
 }

@@ -19,6 +19,8 @@ services:
       - "8222:8222"
     command: 
       - "--js"
+      - "-D"   # debug logs
+      - "-V"   # trace logs
 
   minio:
     image: minio/minio:latest
