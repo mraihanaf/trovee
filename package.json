@@ -8,7 +8,7 @@
     "start": "turbo run start",
     "format": "prettier --write \"**/*.{ts,tsx,md}\" '!data/**'",
     "check-types": "turbo run check-types",
-    "prepare": "husky"
+    "prepare": "node -e \"if(process.env.NODE_ENV !== 'production'){require('child_process').execSync('husky', {stdio: 'inherit'})}\""
   },
   "devDependencies": {
     "@types/node": "^24.6.2",
